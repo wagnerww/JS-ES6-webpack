@@ -10,3 +10,4 @@ yarn add webpack webpack-cli -D
 olhar os pacotes, ou yarn;
 olhar o arquivo de configuracao do babel;
 # JS-ES6-webpack
+# JS-ES6-webpack
