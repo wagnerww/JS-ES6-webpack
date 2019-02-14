@@ -1,27 +1,23 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var arr = [1, 3, 4, 5, 8, 10]; //pegaa item a item e o index
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+var newArr = arr.map(function (item, index) {
+  return item + index;
+});
+console.log("map", newArr); //pega  o valor atual e o valor do próximo
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+var sum = arr.reduce(function (total, next) {
+  return total + next;
+});
+console.log("sum", sum); //faz um filtro, no caso vendo se o valor é divisivel, retornando tru ou false
 
-var matematica =
-/*#__PURE__*/
-function () {
-  function matematica() {
-    _classCallCheck(this, matematica);
-  }
+var filter = arr.filter(function (item) {
+  return item % 2 === 0;
+}); //retorna true caso o item do array for = 2, caso não achar nada, retorna undefined
 
-  _createClass(matematica, null, [{
-    key: "soma",
-    value: function soma(a, b) {
-      var result = a + b;
-      console.log(result);
-    }
-  }]);
-
-  return matematica;
-}();
-
-matematica.soma(5, 5);
+var find = arr.find(function (item) {
+  return item === 2;
+});
+console.log("find", find);
+console.log("filter", filter);
