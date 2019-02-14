@@ -11,6 +11,6 @@
     "@babel/preset-env": "^7.3.1"
   },
   "scripts": {
-    "dev": "babel ./arrays/main.js -o ./arrays/bundle.js -w"
+    "dev": "babel ./desestruturacao/main.js -o ./desestruturacao/bundle.js -w"
   }
 }
