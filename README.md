@@ -1,14 +1,7 @@
-# JS-ES6-Exemplos
+# JS-ES6 com WebPack
 
-yarn add @babel/cli - Instalação do babel em linha de comando
-yarn add @babel/preset
-yarn add @babel/core
+"dev": "webpack-dev-server --mode=development",
+"build": "webpack --mode=production"
 
-rodar yarn dev para transpilar
-yarn add webpack webpack-cli -D
-
-olhar os pacotes, ou yarn;
-olhar o arquivo de configuracao do babel;
-# JS-ES6-webpack
-# JS-ES6-webpack
-# JS-ES6-webpack
+exec yarn dev, cria um "server" para simulações
+exec yarn build, cria o arquivo final para produção
